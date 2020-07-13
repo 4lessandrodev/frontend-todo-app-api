@@ -1,7 +1,8 @@
 import React from 'react';
+import PageHeader from '../template/PageHeader';
 
 export default props => (
     <div>
-        <h1>Todo</h1>
+        <PageHeader name='Tarefas' small='Cadastro'/>
   </div>  
 );
