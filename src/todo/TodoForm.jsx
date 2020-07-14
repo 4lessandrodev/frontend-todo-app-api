@@ -8,7 +8,9 @@ export default props => (
     <form role='form' className="todoForm form-group row" id="todoForm">
         <Grid cols='12 9 10'>
             <label htmlFor="description">Nova tarefa</label>
-            <input id="description" type="text" className="form-control" placeholder="Adicione uma tarefa" />
+            <input id="description" type="text" className="form-control" placeholder="Adicione uma tarefa"
+                onChange={props.handleChange}
+                value={props.description} />
         </Grid>
         <Grid cols='12 3 2'>
             <IconButton icon="plus" onClick={props.handleAdd} style="primary" />
