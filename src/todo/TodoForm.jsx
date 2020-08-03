@@ -14,6 +14,7 @@ export default props => (
         </Grid>
         <Grid cols='12 3 2'>
             <IconButton icon="plus" onClick={props.handleAdd} style="primary" />
+            <IconButton icon="search" onClick={props.handleSearch} style="info" />
         </Grid>
     </form>
 
